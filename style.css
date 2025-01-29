@@ -12,8 +12,11 @@ body {
 }
 
 header {
-    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 1rem;
     text-align: right;
+    background-color: #3b334e;
 }
 
 header .logo {
@@ -22,8 +25,18 @@ header .logo {
     margin-bottom: 0.25rem;
 }
 
+header .ext-link{
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0.5rem 0.25rem;
+    padding: 0.625rem 1.125rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
 header .nav-link {
-    color: #3b334e;
+    color: #fff;
     border-radius: 4px;
     display: inline-block;
     margin: 0.5rem 0.25rem;
@@ -37,13 +50,13 @@ header .nav-link:hover {
 }
 
 h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
+    font-size: 5rem;
+    margin: 8rem 5rem 0.5rem;
 }
 
-h2 {
+h3 {
     font-size: 1.25rem;
-    margin: 1rem 0 0.5rem;
+    margin: 1rem 7rem 0.5rem;
 }
 
 p {
