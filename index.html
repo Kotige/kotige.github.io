@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início - Vítor Barra, Programador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a34ccc6572.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav id="external-links">
-            <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Kotige" class="ext-link" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="assets/Vitor_Barra_s_CV.pdf" download id="cv-download" class="ext-link"> <i class="fa-solid fa-download"></i> Currículo</a>
+            <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Kotige" class="ext-link" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+            
         </nav>
         <nav>
             <a href="#about" class="nav-link">Sobre</a>
@@ -23,11 +27,25 @@
     </header>
     <main>
         <section id="home">
-            <h1>Vítor Barra</h1>
-            <h3>Criando soluções digitais que fazem a diferença para o seu negócio.</h3>
-            <p>Desenvolvo sites modernos, rápidos e responsivos, adaptados às necessidades do seu negócio. Do design à funcionalidade, cada detalhe é pensado para proporcionar a melhor experiência para seus clientes.</p>
+            <div id="card">
+                <h3>Olá, meu nome é</h3>
+                <h1>Vitor Barra</h1>
+                <h3>Eu crio <span>soluções digitais</span> que fazem a diferença para o seu negócio.</h3>
 
-            <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><button> <i class="fa-brands fa-whatsapp"></i> Whatsapp </button></a>
+                <div id="buttons">
+                    <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><button> <i class="fa-brands fa-whatsapp"></i> Whatsapp </button></a>
+                    <a href="assets/Vitor_Barra_s_CV.pdf" download id="cv-download" class="ext-link"> <button><i class="fa-solid fa-download"></i> Currículo</button></a>
+                </div>
+            </div>
+
+            <div id="photo-container">
+                <img src="assets/img/teste.jpg" alt="teste">
+            </div>
+            
+        </section>
+
+        <section id="about">
+            <p>Desenvolvo sites modernos, rápidos e responsivos, adaptados às necessidades do seu negócio. Do design à funcionalidade, cada detalhe é pensado para proporcionar a melhor experiência para seus clientes.</p>
         </section>
         
         <section id="projects">
@@ -123,5 +141,6 @@
     })();
 </script>
     <script src="./email.js"></script>
+    <script src="./events.js"></script>
 </body>
 </html>
