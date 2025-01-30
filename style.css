@@ -56,7 +56,7 @@ h1 {
 
 h3 {
     font-size: 1.25rem;
-    margin: 1rem 7rem 0.5rem;
+    margin: 1rem 5rem 0.5rem;
 }
 
 p {
@@ -109,8 +109,147 @@ section {
 }
 
 footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    background-color: #3b334e;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer-infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 70px;
+}
+
+#footer-links, #footer-social, #footer-contact {
+    flex: 1;
+    border: red 1px solid;
+}
+
+#footer-links {
+display: flex;
+flex-direction: column;
+}
+
+#footer-infos a {
+    color: #fff;
+}
+
+#footer-social h4 {
+    font-size: 2rem;
+}
+
+#projects {
+    display: grid;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.projeto a:hover {
+    background-color: #0056b3;
+}
+
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#social-contact {
+    margin-top: 30px;
+}
+
+#social-contact .social-link {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+#social-contact .social-link:hover {
+    text-decoration: underline;
 }

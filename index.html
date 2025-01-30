@@ -3,34 +3,125 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - John Doe, Programador</title>
+    <title>Início - Vítor Barra, Programador</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a34ccc6572.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav id="external-links">
-            <a href="" class="ext-link">Linkedin</a>
-            <a href="" class="ext-link">GitHub</a>
-            <a href="" class="ext-link">Currículo</a>
+            <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Kotige" class="ext-link" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="assets/Vitor_Barra_s_CV.pdf" download id="cv-download" class="ext-link"> <i class="fa-solid fa-download"></i> Currículo</a>
         </nav>
         <nav>
             <a href="#about" class="nav-link">Sobre</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#projects" class="nav-link">Projetos</a>
             <a href="#contact" class="nav-link">Contato</a>
         </nav>
     </header>
     <main>
-        <section id="welcome">
+        <section id="home">
             <h1>Vítor Barra</h1>
-            <h3>Uma frase impactante</h3>
+            <h3>Criando soluções digitais que fazem a diferença para o seu negócio.</h3>
+            <p>Desenvolvo sites modernos, rápidos e responsivos, adaptados às necessidades do seu negócio. Do design à funcionalidade, cada detalhe é pensado para proporcionar a melhor experiência para seus clientes.</p>
+
+            <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><button> <i class="fa-brands fa-whatsapp"></i> Whatsapp </button></a>
         </section>
-        <section id="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint natus libero placeat voluptatum! Modi earum veritatis atque molestiae facere reiciendis ab asperiores inventore laborum nostrum. Ratione voluptas corporis earum.</p>
+        
+        <section id="projects">
+            <h2>Projetos desenvolvidos</h2>
+            <p> Conheça alguns dos meus últimos projetos:</p>
+            <div id="container">
+                <div class="project">
+                    <img src="" alt="">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.Tecnologias usadas:</p>
+                    <a href="">Ver projeto</a>
+                </div>
+                <div class="project">
+                    <img src="" alt="">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto. Tecnologias usadas:</p>
+                    <a href="">Ver projeto</a>
+                </div>
+                <div class="project">
+                    <img src="" alt="">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto. Tecnologias usadas:</p>
+                    <a href="">Ver projeto</a>
+                </div>
+            </div>
         </section>
+
+        <section id="contact">
+            <h2>Vamos conversar</h2>
+            <p>Ficou interessado(a) em trabalhar comigo? Preencha o formulário ou entre em contato diretamente pelas redeas sociais.</p>
+            <div id="contact-form">
+                <form id="form">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="yourmail@mail.com" required>
+
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div id="social-contact">
+                <p>Ou entre em contato pelas redes sociais:</p>
+                <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" class="social-link"target="_blank"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+        </section>
+
+
     </main>
     <footer>
-
+        <div id="footer-infos">
+            <div id="footer-social">
+                <h4>Vítor Barra</h4>
+                <p>Criando soluções digitais que fazem a diferença para o seu negócio.</p>
+                <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" class="social-link"target="_blank"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+            <div id="footer-links">
+                <p>Links:</p>
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+            </div>
+            <div id="footer-contact">
+                <p>Contato:</p>
+                <p>Email: <a href="mailto:vifebarra@outlook.com">vifebarra@outlook.com</a></p>
+                <p>Telefone: +55 32 984682680</p>
+            </div>
+        </div>
+        <div id="rights">
+            © 2025 Vítor Fernandes Barra. Todos os direitos reservados.
+        </div>
     </footer>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "6TGYbrcHQ-2R20WwpY",
+        });
+    })();
+</script>
+    <script src="./email.js"></script>
 </body>
 </html>
