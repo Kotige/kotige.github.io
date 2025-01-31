@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #eee;
@@ -33,6 +33,7 @@ body {
 
 .scrolled {
     background-color: var(--color-white);
+    border-bottom: var(--color-gunmetal) 1px;
 }
 
 header .ext-link{
@@ -88,8 +89,9 @@ header .nav-link:hover {
     justify-content: center;
 }
 
-h1 {
-    font-family: 'Poppins';
+#card h1 {
+    text-align: center;
+    font-family: 'Exo 2';
     text-transform: uppercase;
     color: var(--color-gunmetal);
     font-size: 5rem;
@@ -97,7 +99,12 @@ h1 {
     padding: 0;
 }
 
+h1, h3 {
+
+}
+
 h3 {
+    text-align: center;
     font-size: 1.15rem;
     font-weight: 300;
 }
@@ -109,12 +116,15 @@ h3 span {
 
 
 #card h3:first-of-type {
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
     padding: 0;
 }
 
 #card h3:nth-of-type(2) {
-    margin-top: -1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     padding-right: 2rem;
 }
 
