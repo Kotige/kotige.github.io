@@ -16,7 +16,6 @@ body {
     font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eee;
 }
 
 .header {
@@ -168,6 +167,49 @@ h3 span {
     cursor: pointer;
 }
 
+#about {
+    padding: 10vh 25vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-gunmetal);
+    padding-left: 1rem;
+    text-align: center;
+}
+
+p {
+    color: var(--color-gunmetal);
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: .3rem 0rem;
+}
+
+p span {
+    font-weight: 600;
+}
+
+#tecnologies span {
+    color: inherit;
+}
+
+p:nth-of-type(2) {
+    margin-top: .7rem;
+}
+
+p:last-of-type {
+    margin-top: 1rem;
+}
+
+p a {
+    text-decoration-color: var(--color-coral);
+    text-decoration-thickness: 2px;
+    font-weight: 600;
+    color: inherit;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -204,29 +246,31 @@ flex-direction: column;
 }
 
 #projects {
+    margin-top: 1rem;
     display: grid;
-    padding: 40px 20px;
+    padding: 4rem 1.25rem;
     text-align: center;
 }
+
 
 .project {
     display: inline-block;
     width: 30%;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
+    margin: .625rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem;
+    border-radius: .5rem;
 }
 
 .project img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: .5rem;
 }
 
 .project h3 {
     font-size: 1.5rem;
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 
 .project p {
@@ -236,16 +280,30 @@ flex-direction: column;
 
 .project a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: .625rem;
     text-decoration: none;
-    background-color: #007bff;
+    background-color: var(--color-coral);
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: .625rem 1.25rem;
+    border-radius: .3rem;
+    transition: transform 0.5s ease-in-out;
 }
 
-.projeto a:hover {
-    background-color: #0056b3;
+.project a:hover {
+    transform: scale(1.1);
+}
+
+#project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#project-buttons a {
+    flex: 1;
+}
+
+#project-buttons a:first-of-type {
+    margin-right: 2rem;
 }
 
 #contact {
