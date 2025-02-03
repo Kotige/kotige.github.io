@@ -1,0 +1,141 @@
+:root {
+    --color-gunmetal: #2D3142;
+    --color-silver: #BFC0C0;
+    --color-white: #FFFFFF;
+    --color-coral: #EF8354;
+    --color-paynes-gray: #4F5D75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    color: var(--color-gunmetal);
+}
+
+header {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    padding: .625rem;
+    z-index: 10;
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
+}
+
+#mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+
+
+header.active {
+    height: 100vh;
+    background-color: var(--color-gunmetal);
+    transform: translateY(0);
+}
+
+#navs {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu {
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    gap: .625rem;
+    width: 100%;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+#external-links {
+    margin-top: 2rem;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: .625rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+nav a {
+    color: var(--color-white);
+    padding: .625rem;
+    text-decoration: none;
+}
+
+
+#hamburger {
+    background: none;
+    color: inherit;
+    border: none;
+    text-align: right;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#identification {
+    padding: .625rem 0 0 1rem;
+    text-align: center;
+}
+
+#identification h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+#menu.active, #external-links.active {
+    display: flex;
+}
+
+#identification.active {
+    display: none;
+}
+
+#hamburger.active {
+    color: var(--color-white);
+    position: absolute;
+    right: .625rem;
+}
+
+#hamburger.active i {
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 126, 95, 0), rgba(79, 93, 117, .8), rgba(255, 126, 95, 0));
+    margin: 10px 0;
+}
+
+hr.active {
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
