@@ -31,6 +31,15 @@ body {
     top: 0;
 }
 
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-gunmetal);
+    cursor: pointer;
+    /* display: none; */
+}
+
 .scrolled {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -195,7 +204,7 @@ p span {
     color: inherit;
 }
 
-p:nth-of-type(2), p:last-of-type {
+#about p:nth-of-type(2), #about p:last-of-type {
     margin-top: .7rem;
     text-align: center;
 }
