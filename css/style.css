@@ -155,11 +155,7 @@ hr.scrolled-hr {
   color: #ffffff;
   text-transform: uppercase;
   font-family: inherit;
-<<<<<<< HEAD
   font-size: 1rem;
-=======
-  font-size: 1.1rem;
->>>>>>> responsive
   font-weight: 300;
   padding: 0.625rem;
   border-radius: 0.3rem;
@@ -346,12 +342,9 @@ footer {
 #footer-infos #footer-social h3 {
   font-size: 3rem;
 }
-<<<<<<< HEAD
-=======
 #footer-infos #footer-social h4 {
   font-size: 1.5rem;
 }
->>>>>>> responsive
 #footer-infos #footer-social h4 span {
   color: #ef8354;
 }
@@ -367,13 +360,8 @@ footer {
 }
 
 #footer-links {
-<<<<<<< HEAD
   padding: 1rem;
   gap: 1rem;
-=======
-  padding: 0.7rem;
-  gap: 2rem;
->>>>>>> responsive
 }
 #footer-links h4 {
   font-weight: 400;
@@ -382,10 +370,6 @@ footer {
   margin: 2rem 0;
 }
 #footer-links a {
-<<<<<<< HEAD
-  font-size: 1rem;
-=======
->>>>>>> responsive
   margin: 0 0.7rem;
 }
 
