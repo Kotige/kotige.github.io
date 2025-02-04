@@ -133,7 +133,7 @@ hr.scrolled-hr {
   display: none;
 }
 #home #card h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 691px) {
   #home #card h3 {
@@ -155,9 +155,9 @@ hr.scrolled-hr {
   color: #ffffff;
   text-transform: uppercase;
   font-family: inherit;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 0.3rem;
   border: 0px;
   transition: background 0.4s ease-in-out;
@@ -193,7 +193,7 @@ hr.scrolled-hr {
 }
 #about p:first-of-type {
   text-indent: 1rem;
-  text-align: justify;
+  text-align: center;
 }
 #about p:last-of-type {
   font-size: 1.4rem;
@@ -257,8 +257,8 @@ hr.scrolled-hr {
 #project-buttons {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin: 0 3rem;
+  gap: 2rem;
+  margin: 0 1rem;
 }
 #project-buttons a {
   flex: 1;
@@ -336,8 +336,14 @@ footer {
   color: #ffffff;
   transition: color 0.4s ease-in-out;
 }
-#footer-infos #footer-social h4 {
+#footer-infos #footer-social h3 {
   font-size: 3rem;
+}
+#footer-infos #footer-social h4 {
+  font-size: 1.5rem;
+}
+#footer-infos #footer-social h4 span {
+  color: #ef8354;
 }
 #footer-infos #footer-social p {
   margin-bottom: 2rem;
@@ -351,7 +357,7 @@ footer {
 }
 
 #footer-links {
-  padding: 1rem;
+  padding: 0.7rem;
   gap: 2rem;
 }
 #footer-links h4 {
@@ -361,7 +367,7 @@ footer {
   margin: 2rem 0;
 }
 #footer-links a {
-  margin: 0 1rem;
+  margin: 0 0.7rem;
 }
 
 #footer-contact {
@@ -377,9 +383,12 @@ footer {
 #footer-contact p {
   margin-bottom: 1rem;
 }
+#footer-contact p a {
+  color: #ef8354;
+}
 
 #rights {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
