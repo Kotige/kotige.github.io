@@ -1,11 +1,10 @@
 @use "../variables/color" as *;
 
 #projects {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // Centraliza os projetos
+    gap: 2rem;
 
     h2 {
         font-size: 3rem;
@@ -16,7 +15,7 @@
 .project {
     display: inline-block;
     width: 100%;
-    margin: .625rem;
+    margin: .625rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 1.25rem;
     border-radius: .5rem;
@@ -62,8 +61,8 @@
 #project-buttons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 0 1rem;
+    gap: .7rem;
+    margin: 0 .6rem;
 
     a {
         flex: 1;
