@@ -133,7 +133,7 @@ hr.scrolled-hr {
   display: none;
 }
 #home #card h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 691px) {
   #home #card h3 {
@@ -155,9 +155,9 @@ hr.scrolled-hr {
   color: #ffffff;
   text-transform: uppercase;
   font-family: inherit;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 300;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 0.3rem;
   border: 0px;
   transition: background 0.4s ease-in-out;
@@ -193,7 +193,7 @@ hr.scrolled-hr {
 }
 #about p:first-of-type {
   text-indent: 1rem;
-  text-align: justify;
+  text-align: center;
 }
 #about p:last-of-type {
   font-size: 1.4rem;
@@ -257,8 +257,8 @@ hr.scrolled-hr {
 #project-buttons {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin: 0 3rem;
+  gap: 2rem;
+  margin: 0 1rem;
 }
 #project-buttons a {
   flex: 1;
@@ -279,6 +279,9 @@ hr.scrolled-hr {
   max-width: 37.5rem;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
 }
 #contact-form label {
   display: block;
@@ -286,13 +289,13 @@ hr.scrolled-hr {
   font-weight: 600;
   font-family: inherit;
   text-align: left;
-  color: var(--color-gunmetal);
+  color: #2d3142;
 }
 #contact-form input, #contact-form textarea {
   width: 100%;
   padding: 0.625rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--color-silver);
+  border: 1px solid #bfc0c0;
   border-radius: 0.313rem;
   font-size: 1rem;
   font-family: inherit;
@@ -336,8 +339,11 @@ footer {
   color: #ffffff;
   transition: color 0.4s ease-in-out;
 }
-#footer-infos #footer-social h4 {
+#footer-infos #footer-social h3 {
   font-size: 3rem;
+}
+#footer-infos #footer-social h4 span {
+  color: #ef8354;
 }
 #footer-infos #footer-social p {
   margin-bottom: 2rem;
@@ -352,7 +358,7 @@ footer {
 
 #footer-links {
   padding: 1rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 #footer-links h4 {
   font-weight: 400;
@@ -361,7 +367,8 @@ footer {
   margin: 2rem 0;
 }
 #footer-links a {
-  margin: 0 1rem;
+  font-size: 1rem;
+  margin: 0 0.7rem;
 }
 
 #footer-contact {
@@ -377,9 +384,12 @@ footer {
 #footer-contact p {
   margin-bottom: 1rem;
 }
+#footer-contact p a {
+  color: #ef8354;
+}
 
 #rights {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

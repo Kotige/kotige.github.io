@@ -18,18 +18,24 @@ footer {
     gap: 1.25rem;
     margin: 4.4rem;
 
-    & a {
+    a {
         text-decoration: none;
         color: $white-color;
         transition: color 0.4s ease-in-out;
     }
 
     #footer-social {
-        & h4 {
+        h3 {
             font-size: 3rem;
         }
+
+        h4 {
+            span {
+                color: $detail-color;
+            }
+        }
     
-        & p {
+        p {
             margin-bottom: 2rem;
         }
     
@@ -45,7 +51,7 @@ footer {
 
 #footer-links {
     padding: 1rem;
-    gap: 2rem;
+    gap: 1rem;
 
     & h4 {
         font-weight: 400;
@@ -55,7 +61,8 @@ footer {
     }
 
     & a {
-        margin: 0 1rem;
+        font-size: 1rem;
+        margin: 0 .7rem;
     }
 }
 
@@ -63,18 +70,22 @@ footer {
     padding: 1rem;
     gap: 2rem;
 
-    & h4 {
+    h4 {
         font-weight: 400;
         font-size: 2rem;
         text-transform: uppercase;
         margin: 2rem 0;
     }
 
-    & p {
+    p {
         margin-bottom: 1rem;
+
+        a {
+            color: $detail-color;
+        }
     }
 }
 
 #rights {
-    font-size: 1rem;
+    font-size: .8rem;
 }
