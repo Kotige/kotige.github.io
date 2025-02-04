@@ -123,17 +123,20 @@ hr.scrolled-hr {
 #home {
   background-color: #ffffff;
   min-height: 100vh;
-  padding: 20vh 5vw 0vh;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+#home #card {
+  margin-top: 0rem;
+}
 #home #card h1, #home #card h2 {
   display: none;
 }
 #home #card h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 691px) {
   #home #card h3 {
@@ -149,13 +152,14 @@ hr.scrolled-hr {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 1.3rem;
 }
 #buttons button {
   background-color: #4f5d75;
   color: #ffffff;
   text-transform: uppercase;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 300;
   padding: 0.625rem;
   border-radius: 0.3rem;
