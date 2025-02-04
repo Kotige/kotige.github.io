@@ -286,13 +286,13 @@ hr.scrolled-hr {
   font-weight: 600;
   font-family: inherit;
   text-align: left;
-  color: var(--color-gunmetal);
+  color: #2d3142;
 }
 #contact-form input, #contact-form textarea {
   width: 100%;
   padding: 0.625rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--color-silver);
+  border: 1px solid #bfc0c0;
   border-radius: 0.313rem;
   font-size: 1rem;
   font-family: inherit;

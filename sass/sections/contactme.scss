@@ -25,14 +25,14 @@
         font-weight: 600;
         font-family: inherit;
         text-align: left;
-        color: var(--color-gunmetal);
+        color: $primary-color;
     }
 
     input, textarea {
         width: 100%;
         padding: .625rem;
         margin-bottom: 1rem;
-        border: 1px solid var(--color-silver);
+        border: 1px solid $secondary-color;
         border-radius: .313rem;
         font-size: 1rem;
         font-family: inherit;
