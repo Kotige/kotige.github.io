@@ -1,0 +1,120 @@
+@use "../variables/color.scss" as *;
+
+header {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    background: $white-color;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    transform: translateY(0);
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+
+    &.scrolled {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    &.active {
+        height: 100vh;
+        background-color: $primary-color;
+        transform: translateY(0);
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 126, 95, 0), rgba(79, 93, 117, .8), rgba(255, 126, 95, 0));
+    margin: 10px 0;
+
+    &.active {
+        opacity: 0;
+    }
+    &.scrolled-hr {
+        opacity: 0;
+    }
+}
+
+#mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    #hamburger {
+        background: none;
+        margin-right: 2rem;
+        color: inherit;
+        border: none;
+        text-align: right;
+        font-size: 3rem;
+        cursor: pointer;
+
+        &.active {
+            color: $white-color;
+            position: absolute;
+            right: .625rem;
+        }
+
+        &.active i {
+            content: "\f00d";
+            font-family: "Font Awesome 5 Free";
+        }
+    }
+
+    #identification {
+        margin-left: 1.5rem;
+        padding: .625rem 0 0 1rem;
+        text-align: center;
+
+        & h3 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+
+        &.active {
+            display: none;
+        }
+    }
+}
+
+#navs {
+    // margin-top: 4rem; 
+    display: flex;
+    flex-direction: column-reverse;
+
+    #external-links {
+        margin-top: 2rem;
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: .625rem;
+        width: 100%;
+        font-size: 2rem;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    & a{
+        color: $white-color;
+        padding: .625rem;
+        text-decoration: none;
+    }
+}
+
+#menu {
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    gap: .625rem;
+    width: 100%;
+    font-size: 2rem;
+    margin: 3rem 0;
+
+    &.active {
+        display: flex;
+    }
+}

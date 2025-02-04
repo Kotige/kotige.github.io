@@ -1,0 +1,20 @@
+// Variables imports
+
+@use "./variables/color" as *;
+
+
+// Structures and pages imports
+
+@use "global";
+
+@use "./structures/header";
+
+@use "./sections/home";
+
+@use "./sections/about";
+
+@use "./sections/projects";
+
+@use "./sections/contactme";
+
+@use "./structures/footer";

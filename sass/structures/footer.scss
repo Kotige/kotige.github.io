@@ -1,0 +1,80 @@
+@use "../variables/color.scss" as *;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: $white-color;
+    // height: 100vh;
+    padding: 1.25rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#footer-infos {
+    //  display: flex;
+    // justify-content: space-between;
+    flex: 1;
+    gap: 1.25rem;
+    margin: 4.4rem;
+
+    & a {
+        text-decoration: none;
+        color: $white-color;
+        transition: color 0.4s ease-in-out;
+    }
+
+    #footer-social {
+        & h4 {
+            font-size: 3rem;
+        }
+    
+        & p {
+            margin-bottom: 2rem;
+        }
+    
+        #footer-social-links {
+            font-size: 3rem;
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+    }
+}
+
+#footer-links {
+    padding: 1rem;
+    gap: 2rem;
+
+    & h4 {
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 2rem 0
+    }
+
+    & a {
+        margin: 0 1rem;
+    }
+}
+
+#footer-contact {
+    padding: 1rem;
+    gap: 2rem;
+
+    & h4 {
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 2rem 0;
+    }
+
+    & p {
+        margin-bottom: 1rem;
+    }
+}
+
+#rights {
+    font-size: 1rem;
+}

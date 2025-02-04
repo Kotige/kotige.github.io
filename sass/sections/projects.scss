@@ -1,0 +1,69 @@
+@use "../variables/color" as *;
+
+#projects {
+    margin-top: 1rem;
+    display: grid;
+    text-align: center;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.project {
+    display: inline-block;
+    width: 100%;
+    margin: .625rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem;
+    border-radius: .5rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        display: inline-block;
+        margin-top: .625rem;
+        text-decoration: none;
+        background-color: $detail-color;
+        color: $white-color;
+        padding: .625rem .25rem;
+        border-radius: .3rem;
+        transition: transform 0.5s ease-in-out;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 3rem;
+
+    a {
+        flex: 1;
+    }
+}
