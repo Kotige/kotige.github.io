@@ -1,4 +1,5 @@
 @use "../variables/color" as *;
+@use "../utils/mixins" as *;
 
 #home {
     background-color: $white-color;
@@ -18,12 +19,37 @@
         h3 {
             font-size: 1.8rem;
 
-            @media screen and (min-width: 691px) {
+            @include respond-to("tablet") {
                 font-size: 3rem;
+            }
+
+            @include respond-to("inter-screens") {
+                font-size: 5rem;
             }
 
             span {
                 color: $detail-color;
+            }
+        }
+    }
+    @include respond-to("laptop") {
+        flex-direction: row;
+        gap: 2rem;
+        #card {
+            flex: 1;
+            h1, h2 {
+                display: flex;
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+            h2 {
+                margin-bottom: 3rem;
+            }
+            h3 {
+                font-size: 2rem;
             }
         }
     }
@@ -36,17 +62,42 @@
     justify-content: space-evenly;
     gap: 1.3rem;
 
+    @include respond-to("tablet") {
+        gap: 1rem;
+    }
+
+    @include respond-to("inter-screens") {
+            gap: 3rem;
+    }
+
+    @include respond-to("laptop") {
+        gap: 2rem;
+    }
+
     button {
         background-color: $second-detail-color;
-    color: $white-color;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 300;
-    padding: .625rem;
-    border-radius: .3rem;
-    border: 0px;
-    transition: background 0.4s ease-in-out;
+        color: $white-color;
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding: .625rem;
+        border-radius: .3rem;
+        border: 0px;
+        transition: background 0.4s ease-in-out;
+
+        @include respond-to("tablet") {
+            font-size: 2.2rem;
+        }
+
+        @include respond-to("laptop") {
+            font-size: 1.6rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $detail-color;
+            }
+        }
     }
 }
 
@@ -63,5 +114,13 @@
         height: auto;
         object-fit: cover;
         display: block;
+    }
+
+    @include respond-to("laptop") {
+        flex: 1;
+
+        img {
+            width: 70%;
+        }
     }
 }

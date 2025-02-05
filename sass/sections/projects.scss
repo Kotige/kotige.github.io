@@ -1,4 +1,5 @@
 @use "../variables/color" as *;
+@use "../utils/mixins.scss" as *;
 
 #projects {
     display: flex;
@@ -9,6 +10,15 @@
     h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
+    }
+
+    
+    @include respond-to("laptop") {
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
     }
 }
 
@@ -66,5 +76,9 @@
 
     a {
         flex: 1;
+    }
+
+    @include respond-to("laptop") {
+        font-size: .7rem;
     }
 }

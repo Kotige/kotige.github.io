@@ -52,12 +52,10 @@ window.addEventListener("scroll", function () {
         hrLine.classList.remove("scrolled-hr");
     }
     let whatsappButton = this.document.getElementById("whatsapp-button");
-    if(this.window.scrollY > 400 && this.window.scrollY <2000) {
-        whatsappButton.style.opacity = "1";
-        whatsappButton.style.visibility = "visible";
+    if(this.window.scrollY > 300 && this.window.scrollY <2100) {
+        whatsappButton.classList.add("visible");
     } else {
-        whatsappButton.style.opacity = "0";
-        whatsappButton.style.visibility = "hidden";
+        whatsappButton.classList.remove("visible");
     }
 })
 

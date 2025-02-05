@@ -1,4 +1,5 @@
 @use "../variables/color.scss" as *;
+@use "../utils/mixins" as *;
 
 header {
     position: relative;
@@ -34,6 +35,9 @@ hr {
     }
     &.scrolled-hr {
         opacity: 0;
+    }
+    @include respond-to("laptop") {
+        display: none;
     }
 }
 
@@ -77,34 +81,60 @@ hr {
             display: none;
         }
     }
+    @include respond-to("laptop") {
+        display: none;
+    }
 }
 
 #navs {
     // margin-top: 4rem; 
     display: flex;
     flex-direction: column-reverse;
-
-    #external-links {
-        margin-top: 2rem;
-        display: none;
-        flex-direction: row;
-        justify-content: center;
-        gap: .625rem;
-        width: 100%;
-        font-size: 2rem;
-
-        &.active {
-            display: flex;
-        }
-    }
-
-    & a{
+    a{
         color: $white-color;
         padding: .625rem;
         text-decoration: none;
     }
+
+    @include respond-to("laptop") {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
+#external-links {
+    margin-top: 2rem;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: .625rem;
+    width: 100%;
+    font-size: 2rem;
+
+    &.active {
+        display: flex;
+    }
+
+    @include respond-to("laptop") {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 2rem .5rem;
+        font-size: 1.2rem;
+        width: auto;
+        height: fit-content;
+        a {
+            color: $primary-color;
+            transition: color 0.3s ease-in-out;
+
+            &:hover{
+                color: $detail-color;
+            }
+        }
+    }
+}
 #menu {
     display: none;
     flex-direction:column;
@@ -116,5 +146,39 @@ hr {
 
     &.active {
         display: flex;
+    }
+    @include respond-to("laptop") {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 2rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 1rem 2rem .5rem;
+        width: auto;
+        height: fit-content;
+        a {
+            color: $primary-color;
+            position: relative;
+            // display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                background-color: $detail-color;
+                transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
     }
 }

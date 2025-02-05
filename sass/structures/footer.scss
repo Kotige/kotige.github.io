@@ -1,4 +1,5 @@
 @use "../variables/color.scss" as *;
+@use "../utils/mixins" as *;
 
 footer {
     display: flex;
@@ -12,11 +13,17 @@ footer {
 }
 
 #footer-infos {
-    //  display: flex;
+    display: flex;
+    flex-direction: column;
     // justify-content: space-between;
     flex: 1;
     gap: 1.25rem;
     margin: 4.4rem;
+
+    @include respond-to("laptop") {
+        display: flex;
+        flex-direction: row;
+    }
 
     a {
         text-decoration: none;
@@ -28,7 +35,6 @@ footer {
         h3 {
             font-size: 3rem;
         }
-
         h4 {
             font-size: 1.5rem;
 
@@ -48,6 +54,25 @@ footer {
             justify-content: center;
             gap: 3rem;
         }
+
+        @include respond-to("laptop") {
+            flex: 1;
+            h3 {
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 1rem;
+            }
+            #footer-social-links {
+                font-size: 2rem;
+                transition: color 0.3s ease-in-out;
+
+                & a:hover {
+                    color: $detail-color;
+                }
+            }
+        }
     }
 }
 
@@ -65,6 +90,28 @@ footer {
     & a {
         margin: 0 .5rem;
         font-size: 1rem;
+    }
+    @include respond-to("laptop") {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 0;
+        flex: 1;
+        gap: 1.5rem;
+
+        h4 {
+            margin-top: 0;
+        }
+
+        a {
+            font-size: 1.5rem;
+            transition: color 0.3s ease-in-out;
+            align-content: center;
+
+            &:hover {
+                color: $detail-color;
+            }
+        }
     }
 }
 
@@ -86,8 +133,22 @@ footer {
             color: $detail-color;
         }
     }
+    @include respond-to("laptop") {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        flex: 1;
+
+        h4 {
+            margin-top: 0;
+        }
+    }
 }
 
 #rights {
     font-size: .8rem;
+    @include respond-to("laptop") {
+        font-size: 1rem;
+    }
 }
