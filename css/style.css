@@ -428,6 +428,9 @@ hr.scrolled-hr {
   }
 }
 
+#contact {
+  margin-bottom: 5rem;
+}
 #contact h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
