@@ -3,6 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO tags -->
+    <meta name="description" content="Desenvolvedor Web especializo em soluções digitais eficientes para o seu negócio.">
+    <meta name="keywords" content="desenvolvimento web, programação, sites, frontend, backend, SEO">
+    <meta name="author" content="Vitor Barra">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph (Social) -->
+    <meta property="og:title" content="Vitor Barra - Desenvolvedor Web">
+    <meta property="og:description" content="Soluções digitais eficientes para o seu negócio.">
+    <meta property="og:image" content="https://kotige.github.io/assets/img/teste.jpg">
+    <meta property="og:url" content="https://kotige.github.io">
+    <meta property="og:type" content="website">
+    <!-- Twitter X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vitor Barra - Desenvolvedor Web">
+    <meta name="twitter:description" content="Soluções digitais eficientes para o seu negócio.">
+    <meta name="twitter:image" content="https://kotige.github.io/assets/img/teste.jpg">
+    <meta name="twitter:site" content="@vitorfernan10b">
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <title>Vítor Barra | Desenvolvedor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,17 +43,17 @@
             </button>
         </div>
         <hr>
-        <div id="navs">
+        <div id="navs" aria-label="Menu Principal">
             <nav id="external-links">
-                <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link" target="_blank" title="LinkedIn"> <i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank" title="Instagram"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Kotige" class="ext-link" target="_blank" title="GitHub"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link" target="_blank" title="LinkedIn"> <i class="fa-brands fa-linkedin" aria-label="LinkedIn de Vitor Barra"></i></a>
+                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank" title="Instagram"> <i class="fa-brands fa-instagram" aria-label="Instagram de Vitor Barra"></i></a>
+                <a href="https://github.com/Kotige" class="ext-link" target="_blank" title="GitHub"> <i class="fa-brands fa-github" aria-label="GitHub de Vitor Barra"></i> </a>
                 
             </nav>
             <nav id="menu">
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#about" class="nav-link" aria-label="Seção Sobre">Sobre</a>
+                <a href="#projects" class="nav-link" aria-label="Seção Projetos">Projetos</a>
+                <a href="#contact" class="nav-link" aria-label="Seção Contato">Contato</a>
             </nav>
         </div>
     </header>
@@ -49,7 +69,7 @@
                 </div>
             </div>
             <div id="photo-container">
-                <img src="assets/img/teste.jpg" alt="imagem de teste">
+                <img src="assets/img/teste.jpg" alt="Foto de Vítor Barra, desenvolvedor Web.">
             </div>
             
         </section>
@@ -76,7 +96,7 @@
 
             <div id="container">
                 <div class="project">
-                    <img src="./assets/img/aquereladoc.png" alt="A querela Documentário" >
+                    <img src="./assets/img/aquereladoc.png" alt="Site do documentário A Querela." >
                     <h3>A Querela</h3>
                     <p>Projeto desenvolvido para divulgação do filme documental de autoria de Devanir Pinheiro Alves. </p>
                     <p><span>Tecnologias Usadas:</span> HTML e CSS</p>
@@ -114,23 +134,23 @@
             <div id="contact-form">
                 <form id="form">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required placeholder="Qual seu nome?">
+                    <input type="text" id="name" name="name" required placeholder="Qual seu nome?" aria-required="true">
 
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="seuemail@mail.com" required>
+                    <input type="text" id="email" name="email" placeholder="seuemail@mail.com" required aria-required="true">
 
                     <label for="subject">Assunto</label>
-                    <input type="text" id="subject" name="subject" required placeholder="Como posso te ajudar?">
+                    <input type="text" id="subject" name="subject" required placeholder="Como posso te ajudar?" aria-required="true">
 
                     <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" rows="5" required placeholder="Digite aqui sua mensagem!"></textarea>
+                    <textarea name="message" id="message" rows="5" required placeholder="Digite aqui sua mensagem!" aria-required="true"></textarea>
 
                     <button type="submit">Enviar Mensagem</button>
                 </form>
             </div>
         </section>
 
-        <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" id="whatsapp-button"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" id="whatsapp-button" aria-label="Entrar em contato pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
     </main>
     <footer>
@@ -140,9 +160,9 @@
                 <p>Desenvolvedor Web</p>
                 <h4><span>Soluções digitais</span> que fazem a diferença para o seu negócio.</h4>
                 <div id="footer-social-links">
-                    <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" class="social-link"target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/vitorbarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-linkedin" aria-label="LinkedIn de Vitor Barra"></i></a>
+                <a href="https://www.instagram.com/vifebarra/" class="ext-link social-link" target="_blank"> <i class="fa-brands fa-instagram" aria-label="Instagram de Vitor Barra"></i></a>
+                <a href="https://wa.me/5532984682680?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" class="social-link"target="_blank" aria-label="Entre em contato pelo WhatsApp"> <i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             <div id="footer-links">
@@ -153,8 +173,8 @@
             </div>
             <div id="footer-contact">
                 <h4>Contato</h4>
-                <p>Email: <a href="mailto:vifebarra@outlook.com">vifebarra@outlook.com</a></p>
-                <p>Telefone: +55 32 984682680</p>
+                <p>Email: <a href="mailto:vifebarra@outlook.com" aria-label="Entre em contato pelo email">vifebarra@outlook.com</a></p>
+                <p aria-label="Número de telefone de Vitor Barra">Telefone: +55 32 984682680</p>
             </div>
         </div>
         <div id="rights">
