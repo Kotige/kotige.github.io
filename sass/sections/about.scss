@@ -2,11 +2,19 @@
 @use "../utils/mixins.scss" as *;
 
 #about {
-    margin-top: 2rem;
+    background-color: $detail-color;
+    color: $white-color;
+    margin:0;
+    padding: 3rem 2rem 1rem;
+
+    // @include respond-to("tablet") {
+    //     height: 100vh;
+    // }
 
     h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        padding-top: 1.5rem;
     }
 
     p {
@@ -27,7 +35,7 @@
 
             a {
                 font-weight: 600;
-                color: $detail-color;
+                color: $second-detail-color;
                 text-decoration: none;
             }
         }

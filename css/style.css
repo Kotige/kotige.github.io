@@ -12,11 +12,10 @@ body {
 
 section {
   margin: 0 3rem;
-  padding-top: 15vh;
 }
 @media screen and (min-width: 1024px) {
   section {
-    margin: 0 6rem;
+    margin: 0;
   }
 }
 
@@ -196,7 +195,7 @@ hr.scrolled-hr {
 #home {
   background-color: #ffffff;
   min-height: 100vh;
-  padding: 8rem 0;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,7 +217,7 @@ hr.scrolled-hr {
 }
 @media screen and (min-width: 768px) {
   #home #card h3 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 #home #card h3 span {
@@ -226,8 +225,10 @@ hr.scrolled-hr {
 }
 @media screen and (min-width: 1024px) {
   #home {
+    margin: 0 4rem;
     flex-direction: row;
     gap: 2rem;
+    text-align: left;
   }
   #home #card {
     flex: 1;
@@ -237,11 +238,11 @@ hr.scrolled-hr {
     flex-direction: column;
   }
   #home #card h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
   }
   #home #card h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   #home #card h3 {
     font-size: 2rem;
@@ -268,6 +269,7 @@ hr.scrolled-hr {
 @media screen and (min-width: 1024px) {
   #buttons {
     gap: 2rem;
+    justify-content: left;
   }
 }
 #buttons button {
@@ -279,7 +281,7 @@ hr.scrolled-hr {
   font-weight: 300;
   padding: 0.625rem;
   border-radius: 0.3rem;
-  border: 0px;
+  border: none;
   transition: background 0.4s ease-in-out;
 }
 @media screen and (min-width: 600px) {
@@ -304,7 +306,7 @@ hr.scrolled-hr {
   align-items: center;
 }
 #photo-container img {
-  margin-top: 3rem;
+  margin: 0rem;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -313,18 +315,25 @@ hr.scrolled-hr {
 @media screen and (min-width: 1024px) {
   #photo-container {
     flex: 1;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
   }
   #photo-container img {
-    width: 70%;
+    width: 90%;
   }
 }
 
 #about {
-  margin-top: 2rem;
+  background-color: #ef8354;
+  color: #ffffff;
+  margin: 0;
+  padding: 3rem 2rem 1rem;
 }
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 #about p {
   font-size: 1.2rem;
@@ -342,7 +351,7 @@ hr.scrolled-hr {
 }
 #about p:last-of-type a {
   font-weight: 600;
-  color: #ef8354;
+  color: #4f5d75;
   text-decoration: none;
 }
 @media screen and (min-width: 1024px) {
@@ -360,9 +369,11 @@ hr.scrolled-hr {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding-top: 3rem;
 }
 #projects h2 {
   font-size: 3rem;
+  padding-top: 1.5rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 1024px) {
@@ -430,10 +441,12 @@ hr.scrolled-hr {
 
 #contact {
   margin-bottom: 5rem;
+  padding-top: 3rem;
 }
 #contact h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 #contact p {
   text-align: center;
