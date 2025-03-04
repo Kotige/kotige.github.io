@@ -195,7 +195,7 @@ hr.scrolled-hr {
 #home {
   background-color: #ffffff;
   min-height: 100vh;
-  padding-top: 8rem;
+  padding: 8rem 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,7 +320,7 @@ hr.scrolled-hr {
     justify-content: end;
   }
   #photo-container img {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -445,7 +445,7 @@ hr.scrolled-hr {
 }
 @media screen and (min-width: 1024px) {
   #project-buttons {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
