@@ -61,16 +61,16 @@ window.addEventListener("scroll", function () {
 
 // SPA
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (event) {
-        event.preventDefault(); 
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener("click", function (event) {
+//         event.preventDefault(); 
 
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
+//         const targetId = this.getAttribute("href").substring(1);
+//         const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            window.history.pushState(null, "", `/${targetId}`); 
-            targetElement.scrollIntoView({ behavior: "smooth" }); 
-        }
-    });
-});
+//         if (targetElement) {
+//             window.history.pushState(null, "", `/${targetId}`); 
+//             targetElement.scrollIntoView({ behavior: "smooth" }); 
+//         }
+//     });
+// });
