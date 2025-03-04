@@ -7,9 +7,13 @@
     margin:0;
     padding: 3rem 2rem 1rem;
 
-    // @include respond-to("tablet") {
-    //     height: 100vh;
-    // }
+    @include respond-to("tablet") {
+        padding: 3rem 3rem 1rem;
+    }
+
+    @include respond-to("laptop") {
+        padding: 3rem 6rem;
+    }
 
     h2 {
         font-size: 3rem;
@@ -40,11 +44,11 @@
             }
         }
         @include respond-to("laptop") {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             
             &:last-of-type {
                 padding-top: 2rem;
-                font-size: 2rem;
+                font-size: 1.4rem;
             }
         }
     }

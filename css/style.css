@@ -330,6 +330,16 @@ hr.scrolled-hr {
   margin: 0;
   padding: 3rem 2rem 1rem;
 }
+@media screen and (min-width: 600px) {
+  #about {
+    padding: 3rem 3rem 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #about {
+    padding: 3rem 6rem;
+  }
+}
 #about h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -356,11 +366,11 @@ hr.scrolled-hr {
 }
 @media screen and (min-width: 1024px) {
   #about p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   #about p:last-of-type {
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
